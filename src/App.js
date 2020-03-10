@@ -12,17 +12,29 @@ export class App extends Component {
     }
   }
 
-  handleInput = (button) => {
-    // e.preventDefault()
-
-    console.log(button)
-
-    // if (button === '='){
-    //   console.log('calculate')
-    // } else {
-    //   this.setState({input: button})
-    // }
+  handleInput = (e) => {
+    e.preventDefault()
+    if (e.target.innerText === '='){
+      this.calculate()
+    } else {
+      this.setState({input: this.state.input + e.target.innerText})
+    }
   }
+
+  calculate = () => {
+    var operation = ''
+
+    if(this.state.input.includes('--')){
+        operation = this.state.input.replace('--','+')
+    } else {
+        operation = this.state.input
+    }
+
+    this.setState({
+      // eslint-disable-next-line
+        input: (eval(operation) || "" ) + ""
+    })
+};
 
   handleOperator = (e) => {
     e.preventDefault()
