@@ -6,7 +6,13 @@ export class Input extends Component {
     return (
       <div className='Input'>
         <h2>Input Component</h2>
-        <h3>{this.props.input}</h3>
+        <button onClick={this.props.handleInput}>+</button>
+        <button onClick={this.props.handleInput}>-</button>
+        <button onClick={this.props.handleInput}>*</button>
+        <button onClick={this.props.handleInput}>/</button>
+        <button onClick={this.props.handleInput}>CE</button>
+        <button onClick={this.props.handleInput}>.</button>
+        <button onClick={this.props.handleInput}>=</button>
         <button onClick={this.props.handleInput}>9</button>
         <button onClick={this.props.handleInput}>8</button>
         <button onClick={this.props.handleInput}>7</button>
