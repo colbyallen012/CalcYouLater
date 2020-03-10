@@ -7,19 +7,21 @@ export class App extends Component {
   constructor(){
     super() 
     this.state = {
-      input: 0,
+      input: '',
       operator: null
     }
   }
 
-  handleInput = (e) => {
-    e.preventDefault()
+  handleInput = (button) => {
+    // e.preventDefault()
 
-    if (e.target.innerText === '+'){
-      console.log('plus')
-    } else {
-      this.setState({input: e.target.innerText})
-    }
+    console.log(button)
+
+    // if (button === '='){
+    //   console.log('calculate')
+    // } else {
+    //   this.setState({input: button})
+    // }
   }
 
   handleOperator = (e) => {
