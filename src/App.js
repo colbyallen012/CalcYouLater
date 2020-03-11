@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Input from './Input.jsx'
-import Operator from './Operator.jsx'
 
 export class App extends Component {
   constructor(){
@@ -46,10 +45,9 @@ export class App extends Component {
   render () {
     return (
       <div className='App'>
-        <h2>Calc You Later</h2>
-        <h3>{this.state.input}</h3>
+        <h2 className='title'>Calc You Later</h2>
+        <h3 className='display'>{this.state.input}</h3>
         <Input handleInput={this.handleInput} />
-        <Operator handleOperator={this.handleOperator} />
       </div>
     )
   }
