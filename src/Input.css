@@ -9,6 +9,8 @@
   flex-wrap: wrap;
   width: 25%;
   margin-left: auto;
+  background-color: #C9B1BD;
+  padding: 20px;
 }
 
 .Buttons {
@@ -16,6 +18,8 @@
   flex-wrap: wrap;
   width: 18%;
   margin-right: auto;
+  background-color: #B49594;
+  padding: 20px;
 }
 
 button {

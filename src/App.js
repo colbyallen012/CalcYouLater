@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Input from './Input.jsx'
+import Input from './Input.js'
 
 export class App extends Component {
   constructor(){
