@@ -7,18 +7,24 @@
 .Numbers {
   border: 1px solid black;
   flex-wrap: wrap;
-  width: 22%;
+  width: 25%;
   margin-left: auto;
 }
 
 .Buttons {
   border: 1px solid black;
   flex-wrap: wrap;
-  width: 22%;
+  width: 18%;
   margin-right: auto;
 }
 
 button {
-  width: 70px;
-  height: 40px;
+  width: 29%;
+  height: 70px;
+  margin: 7px;
+}
+
+.equal, .clear {
+  height: 70px;
+  width: 65%;
 }

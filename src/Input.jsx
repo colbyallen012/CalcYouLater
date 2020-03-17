@@ -16,16 +16,17 @@ export class Input extends Component {
           <button onClick={this.props.handleInput}>1</button>
           <button onClick={this.props.handleInput}>2</button>
           <button onClick={this.props.handleInput}>3</button>
+          <button onClick={this.props.handleInput}>.</button>
           <button onClick={this.props.handleInput}>0</button>
+          <button onClick={this.props.handleInput}>+ -</button>
         </div>
         <div className='Buttons'>
-          <button onClick={this.props.handleInput}>.</button>
-          <button onClick={this.props.handleInput}>CE</button>
+          <button className='clear' onClick={this.props.handleInput}>Clear</button>
           <button onClick={this.props.handleInput}>*</button>
           <button onClick={this.props.handleInput}>/</button>
           <button onClick={this.props.handleInput}>-</button>
           <button onClick={this.props.handleInput}>+</button>
-          <button onClick={this.props.handleInput}>=</button>
+          <button className='equal' onClick={this.props.handleInput}>=</button>
         </div>
       </div>
     )
