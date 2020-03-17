@@ -1,0 +1,11 @@
+.Input {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.Numbers, .Buttons {
+  border: 1px solid black;
+  flex-wrap: wrap;
+  width: 200px;
+}
