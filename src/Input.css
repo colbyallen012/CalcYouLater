@@ -1,0 +1,38 @@
+.Input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Numbers {
+  border: 1px solid black;
+  flex-wrap: wrap;
+  width: 25%;
+  margin-left: auto;
+  background-color: #C9B1BD;
+  padding: 20px;
+}
+
+.Buttons {
+  border: 1px solid black;
+  flex-wrap: wrap;
+  width: 18%;
+  margin-right: auto;
+  background-color: #B49594;
+  padding: 20px;
+}
+
+button {
+  width: 29%;
+  height: 70px;
+  margin: 7px;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.equal, .clear {
+  height: 70px;
+  width: 65%;
+}

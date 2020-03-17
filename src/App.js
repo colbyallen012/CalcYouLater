@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Input from './Input.jsx'
-import Operator from './Operator.jsx'
+import Input from './Input.js'
 
 export class App extends Component {
   constructor(){
     super() 
     this.state = {
       input: '',
-      operator: null
     }
   }
 
@@ -16,6 +14,8 @@ export class App extends Component {
     e.preventDefault()
     if (e.target.innerText === '='){
       this.calculate()
+    } else if (e.target.innerText === 'Clear'){
+      this.clear()
     } else {
       this.setState({input: this.state.input + e.target.innerText})
     }
@@ -34,22 +34,20 @@ export class App extends Component {
       // eslint-disable-next-line
         input: (eval(operation) || "" ) + ""
     })
-};
+  };
 
-  handleOperator = (e) => {
-    e.preventDefault()
-    this.setState({operator: e.target.innerText})
-    console.log(this.state)
+  clear = () => {
+    this.setState({input: ''})
   }
+
 
 
   render () {
     return (
       <div className='App'>
-        <h2>Calc You Later</h2>
-        <h3>{this.state.input}</h3>
+        <h2 className='title'>Calc You Later</h2>
+        <h3 className='display'>{this.state.input}</h3>
         <Input handleInput={this.handleInput} />
-        <Operator handleOperator={this.handleOperator} />
       </div>
     )
   }
