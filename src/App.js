@@ -7,7 +7,6 @@ export class App extends Component {
     super() 
     this.state = {
       input: '',
-      operator: null
     }
   }
 
@@ -15,6 +14,8 @@ export class App extends Component {
     e.preventDefault()
     if (e.target.innerText === '='){
       this.calculate()
+    } else if (e.target.innerText === 'Clear'){
+      this.clear()
     } else {
       this.setState({input: this.state.input + e.target.innerText})
     }
@@ -33,13 +34,12 @@ export class App extends Component {
       // eslint-disable-next-line
         input: (eval(operation) || "" ) + ""
     })
-};
+  };
 
-  handleOperator = (e) => {
-    e.preventDefault()
-    this.setState({operator: e.target.innerText})
-    console.log(this.state)
+  clear = () => {
+    this.setState({input: ''})
   }
+
 
 
   render () {
