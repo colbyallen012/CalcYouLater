@@ -7,18 +7,23 @@
 }
 
 .Numbers {
-  border: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 40px;
   flex-wrap: wrap;
-  width: 25%;
+  width: 392px;
   margin-left: auto;
   background-color: #C9B1BD;
   padding: 20px;
 }
 
 .Buttons {
-  border: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-right-radius: 40px;
   flex-wrap: wrap;
-  width: 18%;
+  width: 217px;
   margin-right: auto;
   background-color: #B49594;
   padding: 20px;
@@ -37,5 +42,10 @@ button {
 
 .equal, .clear {
   height: 70px;
-  width: 65%;
+  width: 73%;
+}
+
+.operator {
+  height: 70px;
+  width: 33%;
 }

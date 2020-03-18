@@ -22,10 +22,10 @@ export class Input extends Component {
         </div>
         <div className='Buttons'>
           <button className='clear' onClick={this.props.handleInput}>Clear</button>
-          <button onClick={this.props.handleInput}>*</button>
-          <button onClick={this.props.handleInput}>/</button>
-          <button onClick={this.props.handleInput}>-</button>
-          <button onClick={this.props.handleInput}>+</button>
+          <button className='operator' onClick={this.props.handleInput}>*</button>
+          <button className='operator' onClick={this.props.handleInput}>/</button>
+          <button className='operator' onClick={this.props.handleInput}>-</button>
+          <button className='operator' onClick={this.props.handleInput}>+</button>
           <button className='equal' onClick={this.props.handleInput}>=</button>
         </div>
       </div>
