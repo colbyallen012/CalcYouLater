@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 .App {
   text-align: center;
 }
 
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 130px;
+  margin: 5px;
+  color: white;
+  text-shadow: 5px 5px 0 #B49594;
+}
+
 .display {
+  font-family: 'Montserrat', sans-serif;
   height: 130px;
   width: 47%;
   margin: auto;
@@ -12,4 +23,5 @@
   font-size: 110px;
   color: white;
   border: 1px solid black;
+  text-shadow: 3px 3px 0 #B49594;
 }

@@ -40,6 +40,7 @@ export class App extends Component {
     }
   };
 
+  
   clear = () => {
     this.setState({input: ''})
   }
