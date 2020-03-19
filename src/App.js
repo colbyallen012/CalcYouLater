@@ -30,12 +30,17 @@ export class App extends Component {
         operation = this.state.input
     }
 
-    this.setState({
-      // eslint-disable-next-line
-        input: (eval(operation) || "" ) + ""
-    })
+    try {
+      this.setState({
+        // eslint-disable-next-line
+          input: (eval(operation) || "" ) + ""
+      })
+    } catch (e) {
+      this.setState({input: 'Input Error'})
+    }
   };
 
+  
   clear = () => {
     this.setState({input: ''})
   }
